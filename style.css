@@ -1,0 +1,51 @@
+.container {
+  display: grid;
+  grid-template-areas: "header header header header"
+                        "one two three four"
+                        "five six seven eight"
+                        "footer footer footer footer"
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+  margin-bottom: 10%;
+  margin-top: 3%;
+  margin-right: 5%;
+}
+.john {
+  grid-area: one;
+  margin-bottom: 10%;
+}
+.daren {
+  grid-area: two;
+  margin-bottom: 10%;
+}
+.josh {
+  grid-area: three;
+  margin-bottom: 10%;
+}
+.aaron {
+  grid-area: four;
+  margin-bottom: 10%;
+}
+.kelvin {
+  grid-area: five;
+}
+.lauren {
+  grid-area: six;
+}
+.lis {
+  grid-area: seven;
+}
+.selk {
+  grid-area: eight;
+}
+footer {
+  grid-area: footer;
+  text-align: center;
+  margin-top: 10%;
+}
+.container {
+  margin-left: 5%;
+}
