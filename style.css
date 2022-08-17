@@ -3,9 +3,12 @@
   grid-template-areas: "header header header header"
                         "one two three four"
                         "five six seven eight"
-                        "footer footer footer footer"
+                        "footer footer footer footer";
+  margin-left: 5%;
 }
-
+body {
+  height: 120vh;
+}
 header {
   grid-area: header;
   text-align: center;
@@ -82,7 +85,4 @@ footer {
   margin-top: 7%;
   margin-left: -5%;
   font-size: 1.85rem;
-}
-.container {
-  margin-left: 5%;
 }
