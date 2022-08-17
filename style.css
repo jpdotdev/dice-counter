@@ -19,7 +19,7 @@ button {
 }
 
 body {
-  height: 150vh;
+  height: 125vh;
   background-image: url('background.jpg');
   background-size: cover;
 }
