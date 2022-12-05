@@ -197,7 +197,7 @@ document.querySelector('#add20aaron').addEventListener('click', addTwentyAaron)
 function addTwentyAaron() {
   aaron20 += 1
   localStorage.setItem('aaron20', aaron20)
-  document.querySelector('#johnnat20').innerText = aaron20;
+  document.querySelector('#aaronnat20').innerText = aaron20;
   document.querySelector('#totalnat20').innerText = total20 += 1;
   localStorage.setItem('total20', total20)
 }
