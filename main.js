@@ -19,9 +19,6 @@ let lauren20 = Number(localStorage.getItem('lauren20'));
 let lis1 = Number(localStorage.getItem('lis1'));
 let lis20 = Number(localStorage.getItem('lis20'));
 
-let selk1 = Number(localStorage.getItem('selk1'));
-let selk20 = Number(localStorage.getItem('selk20'));
-
 let total1 = Number(localStorage.getItem('total1'));
 let total20 = Number(localStorage.getItem('total20'));
 
@@ -46,9 +43,6 @@ document.querySelector('#laurennat20').innerText = lauren20;
 
 document.querySelector('#lisnat1').innerText = lis1;
 document.querySelector('#lisnat20').innerText = lis20;
-
-document.querySelector('#selknat1').innerText = selk1;
-document.querySelector('#selknat20').innerText = selk20;
 
 document.querySelector('#totalnat1').innerText = total1;
 document.querySelector('#totalnat20').innerText = total20;
@@ -324,45 +318,6 @@ function subTwentyLis() {
   lis20 -= 1
   localStorage.setItem('lis20', lis20)
   document.querySelector('#lisnat20').innerText = lis20;
-  document.querySelector('#totalnat20').innerText = total20 -= 1;
-  localStorage.setItem('total20', total20)
-  }
-}
-
-// functions for Selk's dice
-document.querySelector('#add1selk').addEventListener('click', addOneSelk)
-function addOneSelk() {
-  selk1 += 1
-  localStorage.setItem('selk1', selk1)
-  document.querySelector('#selknat1').innerText = selk1;
-  document.querySelector('#totalnat1').innerText = total1 += 1;
-  localStorage.setItem('total1', total1)
-}
-document.querySelector('#subtract1selk').addEventListener('click', subOneSelk)
-function subOneSelk() {
-  if (selk1 > 0) {
-  selk1 -= 1
-  localStorage.setItem('selk1', selk1)
-  document.querySelector('#selknat1').innerText = selk1;
-  document.querySelector('#totalnat1').innerText = total1 -= 1;
-  localStorage.setItem('total1', total1)
-  }
-}
-
-document.querySelector('#add20selk').addEventListener('click', addTwentySelk)
-function addTwentySelk() {
-  selk20 += 1
-  localStorage.setItem('selk20', selk20)
-  document.querySelector('#selknat20').innerText = selk20;
-  document.querySelector('#totalnat20').innerText = total20 += 1;
-  localStorage.setItem('total20', total20)
-}
-document.querySelector('#subtract20selk').addEventListener('click', subTwentySelk)
-function subTwentySelk() {
-  if (selk20 > 0) {
-  selk20 -= 1
-  localStorage.setItem('selk20', selk20)
-  document.querySelector('#selknat20').innerText = selk20;
   document.querySelector('#totalnat20').innerText = total20 -= 1;
   localStorage.setItem('total20', total20)
   }
